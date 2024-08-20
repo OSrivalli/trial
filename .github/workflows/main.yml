@@ -20,4 +20,5 @@ jobs:
         ref: ${{ github.event.inputs.branch }}  # Use the branch input
 
     - name: Print branch name
-      run: echo "Deploying branch: ${{ github.event.inputs.branch }}"
+      run: |
+        echo "Deploying branch: ${{ github.event.inputs.branch }}"
